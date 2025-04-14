@@ -28,6 +28,19 @@ export default {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
 				},
+				smartasset: {
+					blue: {
+						light: '#3498db',
+						DEFAULT: '#2073ba',
+						dark: '#154f88',
+					},
+					green: '#27ae60',
+					gray: {
+						light: '#f8f9fa',
+						DEFAULT: '#e9ecef',
+						dark: '#343a40',
+					}
+				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
