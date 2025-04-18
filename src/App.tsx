@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -9,6 +10,7 @@ import TaxIncomePage from "./pages/TaxIncomePage";
 import TaxReturnPage from "./pages/TaxReturnPage";
 import SignInPage from "./pages/SignInPage";
 import ProfilePage from "./pages/ProfilePage";
+import InvestmentCalculatorPage from "./pages/InvestmentCalculatorPage";
 import { AuthProvider } from "./contexts/AuthContext";
 
 const queryClient = new QueryClient();
@@ -26,7 +28,7 @@ const App = () => (
             <Route path="/taxes/return" element={<TaxReturnPage />} />
             <Route path="/signin" element={<SignInPage />} />
             <Route path="/profile" element={<ProfilePage />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="/investing/investment-calculator" element={<InvestmentCalculatorPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
